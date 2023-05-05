@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Đăng nhập">
+      </form>
+
+      <script>
+        // document.getElementById("username").value = "<script> alert('XSS')<script>";
+            var cookies = document.cookie;
+	    alert("Thông tin cookie của bạn: " + cookies);
+        
+      </script>
+      
+</body>
+</html> -->
+
+<!-- Trang web bị lỗ hổng XSS -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trang web bị tấn công XSS</title>
+  </head>
+  <body>
+    <h1>Chào mừng đến với trang web của chúng tôi</h1>
+    <p>Vui lòng nhập tên của bạn:</p>
+    <form>
+      <input type="text" id="name" name="name">
+      <button type="submit">Gửi</button>
+    </form>
+    <script>
+      // Lấy giá trị của trường nhập liệu tên
+      var name = document.getElementById('name').value;
+      // Hiển thị lời chào mừng với tên đã nhập
+      var greeting = document.createElement('p');
+      greeting.textContent = 'Xin chào, ' + name + '!';
+      document.body.appendChild(greeting);
+    </script>
+
+<script>
+    var maliciousCode = document.createElement('img');
+    maliciousCode.setAttribute('src', 'https://www.example.com/malicious-code.jpg');
+    document.body.appendChild(maliciousCode);
+  </script>
+  
+  </body>
+</html>
