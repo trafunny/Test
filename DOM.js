@@ -25,9 +25,14 @@
 //     });
 // });
 
-function test(a = "dung khong"){
-    console.log(a)
-}
+import Sum from './Modules/Math.js'
+import logger from './Modules/logger.js'
+import * as constants from './Modules/constants.js'
 
-test()
+
+logger(Sum(1,1), constants.WARN_TYPE)
+
+
+
+
      
