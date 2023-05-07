@@ -25,12 +25,13 @@
 //     });
 // });
 
-import Sum from './Modules/Math.js'
 import logger from './Modules/logger.js'
 import * as constants from './Modules/constants.js'
+import Sum from './Modules/Math.js'
 
 
-logger(Sum(1,1), constants.WARN_TYPE)
+logger(Sum(1,1),constants.WARN_TYPE )
+console.log(constants.Sum)
 
 
 
