@@ -22,6 +22,7 @@ Viết về Ngày hôm nay
 -->
 
 ## Step 1: Enable GitHub Pages
+chiu thoi
 ## Bài 2: Tấn công bruteforce
 
 _Welcome to GitHub Pages and Jekyll :tada:!_
