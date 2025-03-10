@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="./assets/CSS/DOM.css">
+    <style>
+       #frame {
+           width: 500px;
+           height: 500px;
+           border: 1px solid black;
+           display: block;
+           padding: 10px;
+       }
+       .same{
+           display: inline-block;
+           width: 100px;
+           height: 100px;
+
+       }
+       .level{
+           display: block;
+       }
+       .level1,.level2,.level3,.level4{
+           text-align: center;
+       }
+       
+       
+       .same{
+           margin: 1px 10px;
+           border: 1px solid black;
+       }
+       
+       ul{
+        display: none;
+       }
+       #search:focus ~ ul{
+        display: block;
+
+       }
+    </style>
+</head>
+<body>
+    <div >
+        DIV
+        <buton   >Click me!</buton>
+    </div>
+    <a href="http://goole.com">goole</a>
+    <h1 class="heading" > HELLO</h1>
+    <input type="text" placeholder="search" id="search" >
+    <ul>
+        <li>Tra</li>
+        <li>Son</li>
+        <li>Khanh</li>
+    </ul>
+    <input type="text" id="username" class="text">
+    <input type="checkbox" class="texbox">
+    <select name="" id="select">    
+        <option value="1" class="chose">Tra</option>
+        <option value="2" class="chose2">Son</option>
+        <option value="3" class="chose3">Khanh</option>
+    </select>
+    
+   <div id="frame">
+       <div class="level level1">
+           <div class="same block1" url="https://www.facebook.com/">Root Element <br> <pre> html </pre></div>
+       </div>
+        <div class="level level2">
+            <div class="same block2"> Element  <br> <pre> head </pre></div>
+            <div class="same block3"> Element <br> <pre> boday </pre></div>
+        </div>
+        <div class="level level3">
+            <div class="same block4" > att <br> <pre>tiltle </pre></div>
+            <div class="same block5"> Element <br> <pre> a</pre></div>
+            <div class="same block6"> Element <br> <pre> h1 </pre></div>
+        </div>
+        <div class="level level3">
+            <div class="same block4"> Text <br> <pre> 'my title' </pre></div>
+            <div class="same block5"> Text <br> <pre> 'my link' </pre></div>
+            <div class="same block6"> Text <br> <pre> 'my description' </pre> </div>
+        </div>
+    
+   </div>
+   
+
+   <form href="" id="test1"></form><form href="" id="test2"></form><form href="" id="test3"></form>
+    
+    
+    <script type="module" src="./DOM.js"></script>
+    <!-- <script  src="./Modules/module1.js" ></script> -->
+    
+    <!-- <script src="./Encode.js"></script> -->
+</body>
+</html> 
+
